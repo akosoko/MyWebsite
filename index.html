@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ayanna Kosoko| Web Developer</title>
+    <title>Ayanna Kosoko </title>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- CSS 
         ================================================== -->
     <!-- Bootstrap 3-->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-    <!-- Template Styles -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'> -->
+    <!-- Style sheet -->
     <link href="css/style.css" rel="stylesheet" media="screen">
       </head>
+      <!-- prompts uer to enter name -->
   <body onload = "myFunction()">
 	  
 	  <!-- NAVBAR
@@ -25,7 +28,7 @@
 			      <span class="sr-only">Toggle navigation</span>
 			      <span class="icon-bar"></span>
 			      <span class="icon-bar"></span>
-			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span> 
 			    </button>
 			    
 			    
@@ -34,8 +37,8 @@
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
 			    <ul class="nav navbar-nav">
 			      <li><a onclick="$('header').animatescroll({padding:71});">Start</a></li>
-			      <li><a onclick="$('.detail').animatescroll({padding:71});">About Me</a></li>
-			      <li><a onclick="$('.features').animatescroll({padding:71});"> Projects</a></li>
+			      <li><a onclick="$('.features').animatescroll({padding:71});">About Me</a></li>
+			      <li><a onclick="$('.detail').animatescroll({padding:71});"> Projects</a></li>
 			      <li><a href = "Ayanna Kosoko's Resume.pdf"> Resume</a></li>
 			      <li><a onclick="$('.social').animatescroll({padding:71});"> Contact</a></li>
 			    </ul>
@@ -44,7 +47,7 @@
 	  </nav>
 	  
 	  
-	   <!-- HEADER
+	   <!-- START
 	   ================================================== -->	  
 	  <header>
 
@@ -53,12 +56,12 @@
 				 <div class="col-md-12">
 					  <h1>Hello <span id="demo"></span>!</h1>
 					  <p class="lead"> Welcome to My Website </p>
-					  <h2> Ayanna Kosoko </h2>
+					  <h2> My name is Ayanna Kosoko. I am a full stack web developer and technician. </h2>
 					  
 
 <script>
 function myFunction() {
-    var person = prompt("Please enter your name", "First Name Only");
+    var person = prompt("Please enter your name", " ");
     
     if (person != null) {
         document.getElementById("demo").innerHTML =
@@ -73,7 +76,7 @@ function myFunction() {
 					    <ol class="carousel-indicators">
 					      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 					      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					      <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
 					    </ol>
 					  
 					    <!-- Wrapper for slides -->
@@ -101,7 +104,8 @@ function myFunction() {
 		  <div class="container">
 
                   <div>
-					  <i class="icon-file"  > </i><br>
+					  <i class="fa fa-file-pdf-o" ></i><div><br>
+
 					 <a href = "Ayanna Kosoko's Resume.pdf" ><button type = "button" >Click to view my resume.</button></a>
 				  </div>
 
@@ -110,30 +114,36 @@ function myFunction() {
 
 			  <div class="row">
 				<div class="col-md-4">
-					  <div class="circle"><i class="icon-like"></i></div>
+					  <div class="circle"><i class="fa fa-heart-o" ></i></div>
 					  <h2>About Me</h2>
 					  <p>As a Computer Science Student at Emory University, I have acquired many skills and gained many life changing experiences. My interest in data and technology has taken me from research in Costa Rica and learning simplified mandarin to computer science programing. My passion for understanding and researching people, strong commitment to teamwork and service, and interest in technological advancements, has allowed me to acquire a pelthra of well rounded skills.</p>
+					  <p id = "white"> languages: Java, Html5, CSS3, Javascript, Assembly language, C. </p>
 				  </div>
 				  <div class="col-md-4">
-					  <div class="circle"><i class="icon-coffee"></i></div>
+					  <div class="circle"><i class="fa fa-coffee"></i></div>
 					  <h2> What I've Done</h2>
 					  <p>   Everything I have engaged in so far has all been driven by my keen interest in research. Most recently, I traveled abroad to Hiroshima, Japan with a team of students. As a team, we worked together to affectively communicate with Japanese volunteers and bomb victims through translation, and in the process we were able to research the affects that the Atomic Bomb had on their culture. Even as a computer science major, I dedicate my time to researching how technological improvements can affect societies. It is this passion that has driven my interest in learning and working with different programming languages, platforms, and operating systems.</p>
 				  </div>
 				
 				  <div class="col-md-4">
-					  <div class="circle"><i class="icon-sun"></i></div>
+					  <div class="circle"><i class="fa fa-sun-o" aria-hidden="true"></i></div>
 					  <h2>What I do</h2>
-					  <p> I am currently immersing myself in the world of code. As I do so I am engaging in various hacakathons and sides projects. As I get through my own personal journey with the world of coding, I want to expose and encourage others; in doing I am strongly active in multiple programming organizes such as Girl Develop It, 100 Girls of Code, and Women Who Code. 
+					  <p> I am currently immersing myself in the world of coding. As I do so I am engaging in various hacakathons and sides projects. As I get through my own personal coding journey, I want to expose and encourage others; in doing I am strongly active in multiple community programming organizes such as Girl Develop It, 100 Girls of Code, and Women Who Code. 
 					  	
 					  </p>
 				  </div>
 				  
 			  </div>
 		  </div>
+
+
+		  <!-- <img src = "img/8402364.png " alt="100 girls of code logo">
+		  <img src = "img/women.png" alt = "women who code logo">
+		  <img src = "img/logo.png" alt = "women who code logo"> -->
 	  </section>
 	  
 	  
-	  <!-- PAYOFF 
+	  <!-- QUOTE
 	      ================================================== -->
 	  <section class="payoff">
 		<div class="container">
@@ -146,7 +156,7 @@ function myFunction() {
 	  </section>
 	  
 	  
-	  <!-- DETAILS 
+	  <!-- PROJECTS
 	      ================================================== -->
 	  <section class="detail">
 	  <h1> Projects</h1>
@@ -163,12 +173,20 @@ function myFunction() {
 					      	<div class="row">
 					      		<div class="col-sm-12 col-md-offset-1 col-md-6">
 					      			<h1>It Makes Cent$</h1>
-					      			<p>A web appilcation created for hackathon focused on creating application to rise Math and Reading scores of students in underserved areas. This application is a protype that allows students upload an educational video, that they made themselves and get paid by their teachers int the process. </p>
+					      			<p>
+					      			 
+					      			   <li>GoodieHack Hackathon Winning Entree <br>
+					      			    <li> <strong>Purpose:</strong> A web application created as a means to engage students in active learning <br>
+					      			    <li><strong>Description:</strong> This website is a protype that allows students to upload creative-educational videos based off of the Georgia educational standards, and get paid by teachers who want to use those videos in their classrooms. <br>
+
+					      			    <li><strong>Tools: </strong>Bootstrap, javascript, html5, and CSS3 </li>
+					      			 
+					      			</p>
 					      		</div>
 					      		<div class="col-sm-12 col-md-5">
 					      			<div class="app-screenshot">
 					      			
-					      				<img src= "screenshot.png" class="img-responsive" alt="App Screen 1">
+					      				<a href = "http://akosoko.github.io/ItMakesCents/"> <img src= "screenshot.png" class="img-responsive" alt="App Screen 1"> </a>
 					      				
 					      			</div>
 					      		</div>
@@ -189,7 +207,15 @@ function myFunction() {
 					    <div class="item">
 					      <div class="row">
 					      	<div class="col-sm-12 col-md-offset-1 col-md-6">
-					      		<h1>More Projects coming Soon</h1>
+					      		<h1>More Projects coming Soon
+				
+
+
+
+
+
+
+					      		</h1>
 					      		
 					      	</div>
 					      	<div class="col-sm-12 col-md-5">
@@ -205,7 +231,7 @@ function myFunction() {
 					  <ol class="carousel-indicators">
 					    <li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
 					    <li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
-					    <li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
+					    <!--<li data-target="#carousel-example-generic-2" data-slide-to="2"></li> -->
 					  </ol>		
 					</div>
 				</div>
@@ -217,18 +243,14 @@ function myFunction() {
 	  
 	  
 	
-	 <!-- SOCIAL
+	 <!-- CONTACT
 	     ================================================== -->
 	  <section class="social">
 	  	<div class="container">
 	  		  <div class="row">
 	  			  <div class="col-md-12">
 	  			  	<h2>Let's Connect</h2>
-	  			   	<a class="icon-facebook"></a>
-	  			   	<a class="icon-linkedin"></a>
-	  			   	<a class="icon-google"></a>
-	  			   	<a class="icon-instagram"></a>
-	  			   	<i class="fa fa-github"></i>
+	  			   	
 
 	  			 <article class = "form"> 
 	  			   </div>
@@ -251,6 +273,11 @@ function myFunction() {
                         </form>
                         </div>
                         </article>
+
+                         <a class="fa fa-linkedin-square" href = "https://www.linkedin.com/in/ayannakosoko"></a>
+	  			   <a class="fa fa-facebook-square" aria-hidden="true" href="https://www.facebook.com/ayanna.kosoko"></a>
+	  			   <a class="fa fa-google-plus-square" aria-hidden="true"  href="https://plus.google.com/u/0/102335870769645303712/posts/p/pub"></a>
+	  			   <a class="fa fa-github-square" aria-hidden="true" href="https://github.com/akosoko"></a>
  
 	  </section>
 

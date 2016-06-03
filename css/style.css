@@ -348,6 +348,7 @@ header .carousel-indicators li {
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 4px;
+	padding-bottom: 10px;
 	width: 280px;
 }
 
@@ -402,6 +403,7 @@ header .carousel-indicators li {
 	font-weight: 400;
 }
 
+
 .features h2{
 	color: #ffffff;
 	text-transform: uppercase;
@@ -419,6 +421,9 @@ header .carousel-indicators li {
 	border-radius: 100%;
 	text-align: center;
 	
+}
+#white{
+	color: #ffffff;
 }
 
 .features span.glyphicon, .features i{
@@ -461,8 +466,8 @@ textarea {
     resize: none;
 }
 input[type=submit] {
-    width: 15%;
-    background-color: #4CAF50;
+    width: 10%;
+    background-color: #0bf397;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -472,7 +477,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #3a3a3a;
 }
 
 /*.social div {
@@ -489,6 +494,7 @@ input[type=submit]:hover {
 	background-position: center top;
 	background-repeat: repeat-x;
 	color: white;
+	z-index: -1;
 }
 
 .social h2{
@@ -502,8 +508,9 @@ input[type=submit]:hover {
 .social a {
 	margin-left: 10px;
 	color: #FFF;
-	font-size: 5em;
+	font-size: 3em;
 	transition: all 0.3s;
+	padding-top: 5px;
 }
 
 
@@ -593,16 +600,30 @@ input[type=submit]:hover {
 @media (max-width:992px) {
 
 .detail .carousel h1, .detail p{
-	text-align: center;
+	text-align: left;
+	display: inline-block;
+	position: relative;
 }
 
 .detail p{
 		margin-bottom: 60px;
+
+    list-style-position: inside;
+    margin-top: 1em;
+   
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    text-align: left;
 }
+
+
+
 
 header, .social{
 	background-position-y: 0px;
 	background-size: 200%;
+	z-index: -1;
 }
 
 .payoff{
