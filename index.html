@@ -14,7 +14,7 @@
     <!-- Template Styles -->
     <link href="css/style.css" rel="stylesheet" media="screen">
       </head>
-  <body>
+  <body onload = "myFunction()">
 	  
 	  <!-- NAVBAR
 	      ================================================== -->
@@ -34,8 +34,9 @@
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
 			    <ul class="nav navbar-nav">
 			      <li><a onclick="$('header').animatescroll({padding:71});">Start</a></li>
-			      <li><a onclick="$('.features').animatescroll({padding:71});">About Me</a></li>
-			      <li><a onclick="$('.detail').animatescroll({padding:71});"> Projects</a></li>
+			      <li><a onclick="$('.detail').animatescroll({padding:71});">About Me</a></li>
+			      <li><a onclick="$('.features').animatescroll({padding:71});"> Projects</a></li>
+			      <li><a href = "Ayanna Kosoko's Resume.pdf"> Resume</a></li>
 			      <li><a onclick="$('.social').animatescroll({padding:71});"> Contact</a></li>
 			    </ul>
 			  </div>
@@ -50,9 +51,21 @@
 		 <div class="container" >
 			 <div class="row">
 				 <div class="col-md-12">
-					  <h1>Hello World!</h1>
+					  <h1>Hello <span id="demo"></span>!</h1>
 					  <p class="lead"> Welcome to My Website </p>
-					  <h2> My Name is Ayanna Kosoko. I'm a Web Developer and Technician.</h2>
+					  <h2> Ayanna Kosoko </h2>
+					  
+
+<script>
+function myFunction() {
+    var person = prompt("Please enter your name", "First Name Only");
+    
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+         person ;
+    }
+}
+</script>
 					  <div class="carousel-iphone">
 					  	<div id="carousel-example-generic" class="carousel slide">
 					    
@@ -120,7 +133,7 @@
 	  </section>
 	  
 	  
-	  <!-- 	Quote
+	  <!-- PAYOFF 
 	      ================================================== -->
 	  <section class="payoff">
 		<div class="container">
@@ -133,7 +146,7 @@
 	  </section>
 	  
 	  
-	  <!-- Projects 
+	  <!-- DETAILS 
 	      ================================================== -->
 	  <section class="detail">
 	  <h1> Projects</h1>
@@ -155,7 +168,7 @@
 					      		<div class="col-sm-12 col-md-5">
 					      			<div class="app-screenshot">
 					      			
-					      				<a href = "http://45.79.204.140/index.html" ><img src= "screenshot.png" class="img-responsive" alt="App Screen 1"> </a>
+					      				<img src= "screenshot.png" class="img-responsive" alt="App Screen 1">
 					      				
 					      			</div>
 					      		</div>
@@ -204,7 +217,7 @@
 	  
 	  
 	
-	 <!-- Contact Form
+	 <!-- SOCIAL
 	     ================================================== -->
 	  <section class="social">
 	  	<div class="container">
@@ -216,59 +229,28 @@
 	  			   	<a class="icon-google"></a>
 	  			   	<a class="icon-instagram"></a>
 	  			   	<i class="fa fa-github"></i>
+
+	  			 <article class = "form"> 
 	  			   </div>
-	  			   <form name="htmlform" method="post" action="index.php">
-<table width="450px">
-</tr>
-<tr>
- <td valign="top">
-  <label for="first_name" id = " ">First Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="first_name" maxlength="50" size="30">
- </td>
-</tr>
- 
-<tr>
- <td valign="top">
-  <label for="last_name">Last Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="last_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email">Email Address *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="email" maxlength="80" size="30">
- </td>
- 
-</tr>
-<tr>
- <td valign="top">
-  <label for="telephone">Telephone Number</label>
- </td>
- <td valign="top">
-  <input  type="text" name="telephone" maxlength="30" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments">Comments *</label>
- </td>
- <td valign="top">
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- </td>
- </tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">   ( <a href="http://www.freecontactform.com/html_form.php">HTML Form</a> )
- </td>
-</tr>
-</table>
-</form>
+	  			        <form action="https://formspree.io/ayannakosoko@gmail.com" method="POST">
+	  			        <div>
+	  			        
+                         <label for="name"> Name: </label> <br>
+                         <input type="text" id = "name" name="name">
+                        </div>
+                        <div>
+                         <label for="name"> Email: </label><br>
+                         <input type="email" id = "email" name="_replyto" >
+                        </div>
+                        <div>
+                        <label for="message"> Message: </label><br>
+                        <textarea name = "message" rows = "8" > </textarea> <div>
+                          <input type="submit" value="Send">
+                          </div>
+                          
+                        </form>
+                        </div>
+                        </article>
  
 	  </section>
 
