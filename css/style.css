@@ -322,7 +322,7 @@ header .carousel-indicators li {
 	background: none;
 }
 
-/*.detail .app-screenshot{
+.detail .app-screenshot{
 	overflow: hidden;
 	overflow: hidden;
 	margin-right: auto;
@@ -332,7 +332,7 @@ header .carousel-indicators li {
 	height: 450px;
 	background: url('../img/iphone-front.png') no-repeat;
 	background-size: 100%;
-}*/
+}
 
 
 /* Mobile */
