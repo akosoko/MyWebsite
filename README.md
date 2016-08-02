@@ -18,6 +18,6 @@
 1. HTML files
 2. CSS files
 3. Javascript files
-4. Adding your screens
+4. Screen Shots
 5. Using the icon set
 
